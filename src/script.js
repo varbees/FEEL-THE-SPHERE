@@ -6,7 +6,7 @@ import * as dat from 'dat.gui'
 //Loading
 const textureLoader = new THREE.TextureLoader()
 
-const normalTexture = textureLoader.load('textures/normalmap.jpg')
+const normalTexture = textureLoader.load('textures/normalmetalhammer.jpg')
 
 
 // Debug
@@ -21,14 +21,14 @@ const scene =  new THREE.Scene()
 
 // Objects
 // const geometry = new THREE.TorusGeometry( .7, .2, 16, 100 );
-const sphereGeometry = new THREE.SphereBufferGeometry(0.5, 64, 64)
+const sphereGeometry = new THREE.SphereBufferGeometry(.5, 64, 64)
 
 // Materials
 
 const material = new THREE.MeshStandardMaterial({
     color : 0x292929,
-    metalness : 0.9,
-    roughness : 0.15,
+    metalness : 0.75,
+    roughness : 0.3,
     normalMap : normalTexture
 })
 // material.color = new THREE.Color(0xff0000)
@@ -39,15 +39,13 @@ scene.add(sphere)
 
 // Lights
 
-const pointLight = new THREE.PointLight(0xffffff, 0.1)
-pointLight.position.x = 2
-pointLight.position.y = 3
-pointLight.position.z = 4
+const pointLight = new THREE.PointLight(0xffffff, 0.2)
+pointLight.position.set(3,3,4)
 scene.add(pointLight)
 
 //2nd Light
-const pointLight2 = new THREE.PointLight(0xff0000, 10)
-pointLight2.position.set(-1.86, 1, -1.65)
+const pointLight2 = new THREE.PointLight(0xff0000, 7)
+pointLight2.position.set(-1.97, 1.58, -1.65)
 // pointLight2.intensity = 1
 scene.add(pointLight2)
 
@@ -59,7 +57,7 @@ light2.add(pointLight2.position, 'z').min(-3).max(3).step(0.01).name('z')
 light2.add(pointLight2, 'intensity').min(0).max(10).step(0.01).name('intensity')
 
 //3rd Light
-const pointLight3 = new THREE.PointLight(0x25c8b4, 10)
+const pointLight3 = new THREE.PointLight(0x25c8b4, 7)
 pointLight3.position.set(1.97, -1.58, -1.65)
 // pointLight2.intensity = 1
 scene.add(pointLight3)
