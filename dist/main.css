@@ -1,0 +1,62 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    height: 100vh;
+    font-family: 'Poppins';
+    background: rgb(24, 24, 24);
+}
+
+body{
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.container {
+    /* scrollbar-width: none; FireFox */
+    color: white;
+}
+
+/* .containerScroll::-webkit-scrollbar {
+    display: none; /* safari adn chrome 
+} */
+
+.webgl
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    mix-blend-mode:difference;
+}
+
+.top-container {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    background: -webkit-linear-gradient(45deg,#ff0000, #25c8b4 90%);
+    background-clip : text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+section {
+    height: 100vh;
+}
+
+/*# sourceMappingURL=main.css.map*/
