@@ -40,12 +40,12 @@ body::-webkit-scrollbar{
 
 .top-container {
     display: grid;
-    height: 100vh;
+    height: 30vh;
     place-items: center;
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     text-transform: uppercase;
     text-align: center;
     background: -webkit-linear-gradient(45deg,#ff0000, #25c8b4 90%);
