@@ -8,8 +8,7 @@ html,
 body
 {
     height: 100vh;
-    font-family: 'Poppins';
-    background: rgb(24, 24, 24);
+    font-family: 'Montserrat', sans-serif;    background: rgb(24, 24, 24);
 }
 
 body{
@@ -20,10 +19,6 @@ body::-webkit-scrollbar{
     display: none;
 }
 
-.container {
-    /* scrollbar-width: none; FireFox */
-    color: white;
-}
 
 /* .containerScroll::-webkit-scrollbar {
     display: none; /* safari adn chrome 
@@ -38,14 +33,45 @@ body::-webkit-scrollbar{
     mix-blend-mode:exclusion;
 }
 
-.top-container {
+
+.container {
+    /* scrollbar-width: none; FireFox */
+    color: white;
     display: grid;
+}
+
+.top-container {
+    padding: 30px 0px 0px 0px;
     height: 30vh;
     place-items: center;
 }
 
+.middle-container {
+    color: white;
+    height: 50vh;
+    place-content: center;
+}
+
+.bottom-container {
+    height: 20vh;
+    padding: 20px;
+
+}
+
+.card {
+    place-items: center;
+    transition: 0.5s ease-in;
+    background-color: linear-gradient(45deg,#ff0000, #25c8b4 80%);
+    margin: 0;
+    padding: 20px;
+    
+    box-shadow: 0 2px 2px 0 rgba(16, 23, 31, 0.5);
+}
+
+
 h1 {
-    font-size: 4rem;
+    font-size: 4em;
+    font-weight: 600;
     text-transform: uppercase;
     text-align: center;
     background: -webkit-linear-gradient(45deg,#ff0000, #25c8b4 90%);
@@ -55,6 +81,26 @@ h1 {
     margin: 0;
 }
 
+p {
+    color: white;
+    letter-spacing: 0.3px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.shortcut {
+    
+    font-size: 1.5em;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(45deg,#ff0000, #25c8b4 90%);
+    background-clip : text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+
+
 section {
-    height: 100vh;
+    height: 20vh;
 }
