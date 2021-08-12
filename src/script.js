@@ -27,8 +27,8 @@ const sphereGeometry = new THREE.SphereBufferGeometry(0.5, 64, 64)
 
 const material = new THREE.MeshStandardMaterial({
     color : 0x292929,
-    metalness : 0.7,
-    roughness : 0.3,
+    metalness : 0.9,
+    roughness : 0.15,
     normalMap : normalTexture
 })
 // material.color = new THREE.Color(0xff0000)
@@ -139,6 +139,7 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
 //Function to regulate movement of sphere in relation with mouse - to make it appear smooth
 document.addEventListener('mousemove', onDocumentMouseMove)
+document.addEventListener('touchmove', onDocumentMouseMove)
 
 let mouseX = 0
 let mouseY = 0
