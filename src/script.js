@@ -148,7 +148,7 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
 //Function to regulate movement of sphere in relation with mouse - to make it appear smooth
 document.addEventListener('mousemove', onDocumentMouseMove)
-document.addEventListener('touchmove', onDocumentMouseMove)
+// document.addEventListener('touchmove', onDocumentMouseMove)
 
 let mouseX = 0
 let mouseY = 0

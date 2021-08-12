@@ -2,8 +2,7 @@
   "repository": "#",
   "license": "UNLICENSED",
   "scripts": {
-    "deploy": "gh-pages -d dist",
-    "build": "webpack --config ./bundler/webpack.prod.js",
+    "build": "webpack --config ./bundler/webpack.prod.js && gh-pages -d dist",
     "dev": "webpack serve --config ./bundler/webpack.dev.js"
   },
   "dependencies": {
