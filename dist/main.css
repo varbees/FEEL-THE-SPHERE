@@ -35,7 +35,7 @@ body::-webkit-scrollbar{
     top: 0;
     left: 0;
     outline: none;
-    mix-blend-mode:difference;
+    mix-blend-mode:exclusion;
 }
 
 .top-container {
