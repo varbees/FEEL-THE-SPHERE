@@ -42,7 +42,7 @@ body::-webkit-scrollbar{
 
 .top-container {
     padding: 30px 0px 0px 0px;
-    height: 30vh;
+    height: 25vh;
     place-items: center;
 }
 
@@ -54,7 +54,7 @@ body::-webkit-scrollbar{
 
 .bottom-container {
     height: 20vh;
-    padding: 20px;
+    padding: 25px;
 
 }
 
